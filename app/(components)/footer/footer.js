@@ -80,7 +80,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/"
                     className="text-gray-600 hover:text-gray-800 cursor-pointer"
                   >
                     Our Testimonials
@@ -88,7 +88,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/servicess"
+                    href="/"
                     className="text-gray-600 hover:text-gray-800 cursor-pointer"
                   >
                     Latest News
@@ -96,7 +96,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/pagess"
+                    href="/"
                     className="text-gray-600 hover:text-gray-800 cursor-pointer"
                   >
                     Our Mission
@@ -104,7 +104,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/blog"
+                    href="/"
                     className="text-gray-600 hover:text-gray-800 cursor-pointer"
                   >
                     Get A Free Quot
@@ -118,46 +118,10 @@ export default function Footer() {
                 Our Services
               </h2>
               <nav class="list-none mb-10">
-                <li>
-                  <Link
-                    href="/"
-                    class="text-gray-600 hover:text-gray-800 cursor-pointer"
-                  >
-                    App Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    class="text-gray-600 hover:text-gray-800 cursor-pointer"
-                  >
-                    Web Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/servicess"
-                    class="text-gray-600 hover:text-gray-800 cursor-pointer"
-                  >
-                    Graphic Design
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pagess"
-                    class="text-gray-600 hover:text-gray-800 cursor-pointer"
-                  >
-                    Web Solution
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    class="text-gray-600 hover:text-gray-800 cursor-pointer"
-                  >
-                    App Design
-                  </Link>
-                </li>
+                <li>Holler Heart Surgery</li>
+                <li>Online Monitoring</li>
+                <li>Holler Brain Surgery</li>
+                
               </nav>
             </div>
           </div>

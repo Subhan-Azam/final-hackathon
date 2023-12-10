@@ -10,8 +10,10 @@
   background-color: rgba(53, 53, 245, 0.459);
   border: 2px solid rgba(115, 115, 255, 0.753);
   transition: all ease 0.5s;
+  border-radius: 25px;
 }
 
 .clientPriceCard:hover {
   scale: 1.1;
+  border-radius: none;
 }

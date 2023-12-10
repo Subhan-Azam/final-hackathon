@@ -1,8 +1,7 @@
+import WorkingProcess from "./(components)/workingProcess/workingProcess";
 import About from "./about/page";
 import Blog from "./blog/page";
-import Portfolio from "./portfolio/page";
 import Price from "./price/page";
-// import Services from "./servicess/page";
 import Team from "./team/page";
 
 export default function Home() {
@@ -10,9 +9,8 @@ export default function Home() {
     <>
       <div className="completeWeb">
         <About />
-        {/* <Services /> */}
-        <Portfolio />
         <Team />
+        <WorkingProcess/>
         <Price />
         <Blog />
       </div>
