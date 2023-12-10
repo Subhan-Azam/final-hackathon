@@ -1,0 +1,7 @@
+.headerBg {
+  background: rgba(0, 0, 0, 0.763) url("/public/img/avenue-815297_640");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}

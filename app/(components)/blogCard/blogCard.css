@@ -1,0 +1,11 @@
+.blogCard {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin: 10px 10px;
+}
+.blogCard:hover {
+  background-color: rgba(16, 16, 247, 0.741);
+  border: 2px solid blue;
+  color: white;
+}

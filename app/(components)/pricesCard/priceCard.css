@@ -1,0 +1,22 @@
+.priceCard {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.29),
+    -2px -2px 20px rgba(128, 128, 128, 0.29);
+
+  padding: 20px 0px;
+  width: 300px;
+}
+
+.priceCard:hover {
+  background-color: rgba(0, 0, 255, 0.717);
+  color: white;
+  box-shadow: none;
+}
+.priceCard:hover Button {
+  background-color: white;
+  color: rgba(0, 0, 255, 0.717);
+}
