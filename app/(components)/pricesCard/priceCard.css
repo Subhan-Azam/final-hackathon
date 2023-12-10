@@ -15,7 +15,9 @@
   background-color: rgba(0, 0, 255, 0.717);
   color: white;
   box-shadow: none;
+  transition: all ease 0.5s;
 }
+
 .priceCard:hover Button {
   background-color: white;
   color: rgba(0, 0, 255, 0.717);

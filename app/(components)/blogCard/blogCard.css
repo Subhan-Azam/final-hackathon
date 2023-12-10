@@ -8,4 +8,5 @@
   background-color: rgba(16, 16, 247, 0.741);
   border: 2px solid blue;
   color: white;
+  transition: all ease 0.5s;
 }

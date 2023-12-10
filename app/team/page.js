@@ -1,44 +1,50 @@
 import TeamCard from "./(components)/taemCard/teamCard";
 
-// import img1 from "../../public/img/young-students-college-computer-lab.jpg";
-// import img2 from "../../public/img/istockphoto-1494487485-170667a.jpg";
-// import img3 from "../../public/img/download.jpeg";
+import img1 from "../../public/assets/PNG Open Heart.jpg";
+import img2 from "../../public/assets/images (4).jpg";
+import img3 from "../../public/assets/images (5).jpg";
 
-export default function Team() {
+export default function Services() {
   return (
     <>
       <div className="py-14 bg-blue-100">
         <div className="max-w-[1010px] m-auto mb-10">
           <span className="flex justify-center text-lg text-blue-600">
-            Our Team
+            Our Services
           </span>
           <h1 className="flex justify-center text-4xl font-bold">
-            Our Top Dedicated Professionals
+            Our Medical Service
           </h1>
         </div>
 
         <div className="flex justify-center flex-wrap">
           <div className="mx-9">
             <TeamCard
-              // src={img1}
-              heading={"Dulgas Walker"}
-              skill={"SHIEF STAF"}
+              src={img1}
+              heading={"Holler Heart Surgery"}
+              skill={
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio porro quam culpa"
+              }
             />
           </div>
 
           <div className="mx-9">
             <TeamCard
-              // src={img2}
-              heading={"Caroline Harrison"}
-              skill={"FOUNDER AND MANAGER"}
+              src={img2}
+              heading={"Online Monitoring"}
+              skill={
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio porro quam culpa"
+              }
             />
           </div>
 
           <div className="mx-9">
             <TeamCard
-              // src={img3}
-              heading={"Safia Simpson"}
-              skill={"WEB DESIGNER"}
+              src={img3}
+              heading={"Holler Brain Surgery"}
+              skill={
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio porro quam culpa"
+              }
             />
           </div>
         </div>

@@ -10,7 +10,7 @@ export default function TeamCard(props) {
           src={props.src}
         />
       </div>
-        <div className="m-auto w-48 flex items-center flex-col">
+        <div className="m-auto w-72  flex justify-center items-center flex-col">
           <h3 className="font-bold text-lg">{props.heading}</h3>
           <p className="text-sm">{props.skill}</p>
         </div>
