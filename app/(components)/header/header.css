@@ -4,4 +4,37 @@
   background-size: cover;
   background-position: cover;
   background-blend-mode: darken;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 160%;
+  }
+}
+
+.typing-animation h1 {
+  overflow: hidden;
+  border-right: 2px solid blue;
+  white-space: nowrap;
+  animation: typing 3s steps(30) infinite;
+}
+
+.headerDashboard{
+  border: 2px solid rgb(38 130 217);
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  padding: 9px 20px;
+}
+
+.headerDashboard:hover{
+  background-color: rgb(38 130 217);
+  font-size: 26px;
+  transition: all ease 0.5s;
 }

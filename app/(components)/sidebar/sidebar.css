@@ -1,0 +1,20 @@
+.sidebar{
+    
+}
+
+.sidebar_links{
+    display: flex;
+    align-items: center;
+    max-width: 230px;
+    background-color: transparent;
+    border: 2px solid rgb(116, 198, 231);
+    border-radius: 18px;
+    padding-left: 50px;
+    margin: 20px 0px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.sidebar_links:hover{
+    background-color: rgb(116, 198, 231);
+}

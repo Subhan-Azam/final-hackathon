@@ -8,7 +8,7 @@ import VerifyPage from "../(components)/verifyPage/verifyPage";
 export default function Services() {
   return (
     <>
-      <div className="py-14 bg-blue-100">
+      <div id="team" className="py-14 bg-blue-100">
         <div className="max-w-[1010px] m-auto mb-10">
           {/* <span className="flex justify-center text-lg text-blue-600">
             Our Services

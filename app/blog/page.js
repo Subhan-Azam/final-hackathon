@@ -4,7 +4,7 @@ import VerifyPage from "../(components)/verifyPage/verifyPage";
 export default function Blog() {
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center py-32">
+      <div id="blog" className="flex flex-wrap items-center justify-center py-32">
         <div className="lg:w-1/4 sm:w-96 md:w-1/2 w-full px-4">
           <VerifyPage verifyPage={"Our Blog"} />
           <h2 className="font-bold text-3xl text-gray-900 tracking-widest mb-3">

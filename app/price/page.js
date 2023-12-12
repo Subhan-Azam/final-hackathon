@@ -13,7 +13,7 @@ import "./price.css";
 export default function Price() {
   return (
     <>
-      <div className="my-16">
+      <div id="price" className="my-16">
         <div className="max-w-[945px] m-auto mb-8 flex justify-between items-center flex-wrap">
           <div>
             <VerifyPage verifyPage={"Our Pricing"} />

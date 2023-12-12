@@ -7,8 +7,8 @@ import AboutServices from "./(components)/aboutServices";
 export default function About() {
   return (
     <>
-      <section class="text-gray-600 body-font mt-20">
-        <div class="container mx-auto flex px-5 pb-24 pt-12 md:flex-row flex-col items-center flex-row-reverse">
+      <section id="about" class="text-gray-600 body-font mt-20">
+        <div class="container mx-auto flex px-5 pb-24 pt-12 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               src="/assets/header-Doctor.png"
@@ -36,7 +36,7 @@ export default function About() {
                 <AboutServices title="Oxygen On Wheel" />
               </div>
 
-              <div className="flex">
+              <div className="flex">transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300
                 <AboutServices title="Pharmacy On Clinic" />
                 <AboutServices title="On Duty Doctor" />
               </div>

@@ -1,60 +1,75 @@
-"use client"
-import React, { useState } from 'react';
-import { collection, addDoc } from "firebase/firestore"; 
-import { db } from "@/config/firebase"; 
-
+"use client";
+import React, { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "@/config/firebase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStethoscope } from "@fortawesome/free-solid-svg-icons";
 
 const AppointmentModal = ({ closeModal }) => {
-  const [name, setName] = useState('');
-  const [contact, setContact] = useState('');
-  const [medical, setMedical] = useState('');
+  const [name, setName] = useState("");
+  const [contact, setContact] = useState("");
+  const [medical, setMedical] = useState("");
 
   const handleContactChange = (e) => {
     setContact(e.target.value);
-    
   };
 
   const onSubmitHandler = async () => {
-    let patient ={
+    let patient = {
       name,
       contact,
-      medical
-    }
+      medical,
+    };
 
     try {
-      const collectionName = await collection(db, "patients")
-      await addDoc(collectionName, patient)
+      const collectionName = await collection(db, "patients");
+      await addDoc(collectionName, patient);
       console.log("Document written with ID: ");
     } catch (e) {
       console.error("Error adding document: ", e);
     }
 
     // Add your logic to save name and contact
-    console.log('Name:', name);
-    console.log('Contact:', contact);
+    console.log("Name:", name);
+    console.log("Contact:", contact);
     closeModal(); // Close the modal after saving
   };
 
-
-  
   return (
-    <div className="modal-container" >
-      <div style={{backgroundColor:"black"}} className="modal-content">
+    <div className="modal-container">
+      <div style={{ backgroundColor: "black" }} className="modal-content">
         <h2>Your Appointment Details</h2>
 
         <label style={{}}>
           Name:
-          <input style={{color:"black"}} type="text" placeholder='Enter your Name' value={name} onChange={(e)=>setName(e.target.value)} />
+          <input
+            style={{ color: "black" }}
+            type="text"
+            placeholder="Enter your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </label>
 
         <label>
           Contact No:
-          <input style={{color:"black"}} type="number" placeholder='Enter your contact No' value={contact} onChange={handleContactChange} />
+          <input
+            style={{ color: "black" }}
+            type="number"
+            placeholder="Enter your contact No"
+            value={contact}
+            onChange={handleContactChange}
+          />
         </label>
 
         <label>
           Medical History:
-          <input style={{color:"black"}} type="text" placeholder='Enter your Medical history' onChange={(e)=> setMedical(e.target.value)} />
+          <input
+            style={{ color: "black" }}
+            type="text"
+            placeholder="Enter your Medical history"
+            onChange={(e) => setMedical(e.target.value)}
+          />
         </label>
 
         <div className="button-container">
@@ -78,7 +93,6 @@ const AppointmentModal = ({ closeModal }) => {
           display: flex;
           justify-content: center;
           align-items: center;
-         
         }
 
         .modal-content {
@@ -150,7 +164,12 @@ export default function AppointmentBtn() {
 
   return (
     <div>
-      <button className="appointment-button" onClick={openModal}>
+      
+      <button
+        className="appointment-button transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300"
+        onClick={openModal}
+      >
+        <FontAwesomeIcon width={30} icon={faStethoscope} />
         Appointment
       </button>
 

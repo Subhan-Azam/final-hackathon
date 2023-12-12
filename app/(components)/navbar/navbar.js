@@ -21,18 +21,18 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href={"/about"}>ABOUT</Link>
+              <Link href={"#about"}>ABOUT</Link>
             </li>
 
             <li>
-              <Link href={"/team"}>Services</Link>
+              <Link href={"#team"}>Services</Link>
             </li>
             <li>
-              <Link href={"/price"}>PRICES</Link>
+              <Link href={"#price"}>PRICES</Link>
             </li>
 
             <li>
-              <Link href={"/blog"}>BLOG</Link>
+              <Link href={"#blog"}>BLOG</Link>
             </li>
           </ul>
         </nav>
