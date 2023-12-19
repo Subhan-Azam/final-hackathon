@@ -4,19 +4,22 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.29),
-    -2px -2px 20px rgba(128, 128, 128, 0.29);
+  box-shadow: 10px 12px 16px rgba(128, 128, 128, 0.735);
 
   padding: 20px 0px;
   width: 300px;
+  border-radius: 10px;
+  /* border: 2px solid gray; */
+  background-color: rgba(128, 128, 128, 0.197);
 }
 
 .priceCard:hover {
-  background-color: rgba(0, 0, 255, 0.717);
   color: white;
   box-shadow: none;
-  border-radius: 35px;
+  border-radius: 25px;
   transition: all ease 0.5s;
+  background-color: rgba(0, 0, 255, 0.717);
+  /* clip-path: circle(100%); */
 }
 
 .priceCard:hover Button {

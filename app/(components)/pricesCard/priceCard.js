@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 import Button from "../button/button";
 import "./priceCard.css";
 
@@ -10,7 +10,10 @@ export default function PriceCard(props) {
         <Image src={props.src} className="w-24"></Image>
 
         <h3>
-          <span className="text-xl font-bold text-blue-800">{props.coursePrice}</span>/month
+          <span className="text-xl font-bold text-blue-800">
+            {props.coursePrice}
+          </span>
+          /month
         </h3>
 
         <p className="mb-6 mt-3">

@@ -5,9 +5,9 @@ import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 
 export default function Sidebar() {
   return (
-    <Link href="/">
-      <div className="sidebar">
-        <nav className="pt-6 h-screen max-w-[275px] w-screen bg-slate-300 border-r-2 border-gray-400 shadow-xl">
+    <div className="sidebar">
+      <nav className="pt-6 h-screen max-w-[275px] w-screen bg-slate-300 border-r-2 border-gray-400 shadow-xl">
+        <Link href="/">
           <div className="pl-5">
             <div className="sidebar_links">
               <FontAwesomeIcon
@@ -18,8 +18,8 @@ export default function Sidebar() {
               <p className="font-semibold">Go To Home</p>
             </div>
           </div>
-        </nav>
-      </div>
-    </Link>
+        </Link>
+      </nav>
+    </div>
   );
 }

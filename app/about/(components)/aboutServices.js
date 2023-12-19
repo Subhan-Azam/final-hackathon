@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutServices(props) {
   return (
-    <div className="flex mr-20 mb-2">
+    <div className="flex w-64 my-1">
       <Image
         src="/assets/images.png"
         width={30}

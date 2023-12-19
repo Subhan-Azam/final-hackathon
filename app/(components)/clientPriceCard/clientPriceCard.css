@@ -15,5 +15,5 @@
 
 .clientPriceCard:hover {
   scale: 1.1;
-  border-radius: none;
+  /* border-radius: none; */
 }

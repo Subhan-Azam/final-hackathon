@@ -1,5 +1,5 @@
-
 "use client";
+import "./admin.css";
 import { db } from "@/config/firebase";
 import {
   collection,
@@ -65,8 +65,9 @@ export default function Admin() {
 
   return (
     <div className="flex items-center">
-    
       <Sidebar />
+
+            
       <table className="relative top-0">
         <thead>
           <tr>
@@ -131,10 +132,6 @@ export default function Admin() {
     </div>
   );
 }
-
-
-
-
 
 // "use client";
 // import { db } from "@/config/firebase";
